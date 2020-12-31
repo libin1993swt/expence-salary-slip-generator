@@ -1,0 +1,242 @@
+[
+    {
+        "rank": 1,
+        "title": "Bare-Metal Kubernetes with K3s",
+        "url": "https://blog.alexellis.io/bare-metal-kubernetes-with-k3s/",
+        "points": 70,
+        "username": "alexellisuk",
+        "comments": 1
+    },
+    {
+        "rank": 2,
+        "title": "You Should Write a User Guide",
+        "url": "https://boringstartupstuff.com/newsletter/dec-22nd-2020-write-a-user-guide",
+        "points": 7,
+        "username": "opsgal",
+        "comments": 23
+    },
+    {
+        "rank": 3,
+        "title": "Underwater Roundabout in the Faroe Islands",
+        "url": "https://www.bbc.com/news/world-europe-55195390",
+        "points": 42,
+        "username": "lqet",
+        "comments": 2
+    },
+    {
+        "rank": 4,
+        "title": "Common security issues with crypto websites and APIs",
+        "url": "https://introvertmac.wordpress.com/2020/12/22/common-security-issues-with-crypto-websites-and-apis/",
+        "points": 56,
+        "username": "introvertmac",
+        "comments": 2
+    },
+    {
+        "rank": 5,
+        "title": "Ripple: A wireless token-passing protocol for multi-hop wireless mesh networks",
+        "url": "https://www.researchgate.net/publication/3417652_Ripple_A_wireless_token-passing_protocol_for_multi-hop_wireless_mesh_networks",
+        "points": 25,
+        "username": "based2",
+        "comments": 2
+    },
+    {
+        "rank": 6,
+        "title": "Microsoft and Google join Facebook’s legal battle against NSO",
+        "url": "https://venturebeat.com/2020/12/22/microsoft-and-google-join-facebooks-legal-battle-against-hacking-company-nso/",
+        "points": 61,
+        "username": "KoftaBob",
+        "comments": 1
+    },
+    {
+        "rank": 7,
+        "title": "Cryptocurrency company Ripple says SEC lawsuit is imminent",
+        "url": "https://www.axios.com/cryptocurrency-ripple-sec-lawsuit-imminent-94f946a5-cdc5-4c9c-89cc-65409a563e2c.html",
+        "points": 250,
+        "username": "taytus",
+        "comments": 10
+    },
+    {
+        "rank": 8,
+        "title": "Why FSF Endorsing PureOS Matters",
+        "url": "https://puri.sm/posts/why-fsf-endorsing-pureos-matters/",
+        "points": 53,
+        "username": "fsflover",
+        "comments": 4
+    },
+    {
+        "rank": 9,
+        "title": "2k Parents Demand Major Academic Publisher Drop Proctorio Surveillance Tech",
+        "url": "https://www.vice.com/en/article/88am8k/2000-parents-demand-major-academic-publisher-drop-proctorio-surveillance-tech",
+        "points": 45,
+        "username": "elsewhen",
+        "comments": 1
+    },
+    {
+        "rank": 10,
+        "title": "Double Blind Passwords a.k.a. Horcruxing",
+        "url": "https://kaizoku.dev/double-blind-passwords-aka-horcruxing",
+        "points": 238,
+        "username": "phantom_rehan",
+        "comments": 10
+    },
+    {
+        "rank": 11,
+        "title": "Together Software (YC S19) Hiring Software Engineer",
+        "url": "https://jobs.lever.co/together/86c724e1-9337-487b-a79f-541e82a35d51",
+        "points": 2,
+        "username": "hide",
+        "comments": null
+    },
+    {
+        "rank": 12,
+        "title": "A new API backend for the jamstack",
+        "url": "https://blog.m3o.com/2020/12/22/your-new-api-backend-for-the-jamstack.html",
+        "points": 24,
+        "username": "asim",
+        "comments": 2
+    },
+    {
+        "rank": 13,
+        "title": "Microplastics found in the placentas of human fetuses",
+        "url": "https://www.theguardian.com/environment/2020/dec/22/microplastics-revealed-in-placentas-unborn-babies",
+        "points": 84,
+        "username": "samizdis",
+        "comments": 3
+    },
+    {
+        "rank": 14,
+        "title": "Mobile Home Skyscrapers: The Elusive Dream of Vertical Urban Trailer Parks",
+        "url": "https://99percentinvisible.org/article/mobile-home-skyscrapers-elusive-dream-vertical-urban-trailer-parks/",
+        "points": 59,
+        "username": "thread_id",
+        "comments": 9
+    },
+    {
+        "rank": 15,
+        "title": "Congress Crams Language to Criminalize Streaming, Meme-Sharing into Omnibus Bill",
+        "url": "https://www.commondreams.org/news/2020/12/21/atrocious-congress-crams-language-criminalize-online-streaming-meme-sharing-5500",
+        "points": 407,
+        "username": "CharlesW",
+        "comments": 9
+    },
+    {
+        "rank": 16,
+        "title": "Thai baby elephant hit by motorcycle survives after receiving CPR",
+        "url": "https://www.reuters.com/article/us-thailand-accident-baby-elephant/thai-baby-elephant-hit-by-motorcycle-survives-after-receiving-cpr-idUSKBN28V1J8",
+        "points": 78,
+        "username": "billyharris",
+        "comments": 4
+    },
+    {
+        "rank": 17,
+        "title": "The Laws of Core Data",
+        "url": "https://davedelong.com/blog/2018/05/09/the-laws-of-core-data/",
+        "points": 54,
+        "username": "Austin_Conlon",
+        "comments": 10
+    },
+    {
+        "rank": 18,
+        "title": "Generic Mitigations",
+        "url": "https://www.oreilly.com/content/generic-mitigations/",
+        "points": 35,
+        "username": "kiyanwang",
+        "comments": 8
+    },
+    {
+        "rank": 19,
+        "title": "Microsoft, Google, Cisco, and others file amicus brief in support of NSO lawsuit",
+        "url": "https://www.zdnet.com/article/microsoft-google-cisco-and-others-file-amicus-brief-in-support-of-facebooks-nso-lawsuit/",
+        "points": 20,
+        "username": "1cvmask",
+        "comments": 1
+    },
+    {
+        "rank": 20,
+        "title": "Half-Precision Floating-Point, Visualized",
+        "url": "https://observablehq.com/@rreusser/half-precision-floating-point-visualized",
+        "points": 39,
+        "username": "mariuz",
+        "comments": 9
+    },
+    {
+        "rank": 21,
+        "title": "On Visual Formalisms – David Harel (1988) [pdf]",
+        "url": "http://bowringj.people.cofc.edu/docs/p514-harel.pdf",
+        "points": 8,
+        "username": "Cieplak",
+        "comments": 4
+    },
+    {
+        "rank": 22,
+        "title": "Apple Is Working on a Car",
+        "url": "https://www.cnbc.com/2020/12/21/lidar-stocks-soar-after-report-that-apple-is-working-on-a-car-for-2024.html",
+        "points": 7,
+        "username": "bro420",
+        "comments": 26
+    },
+    {
+        "rank": 23,
+        "title": "Just Culture: Standardizing Fire Service Accountability",
+        "url": "https://www.firehouse.com/leadership/article/21165963/just-culture-standardizing-fire-service-accountability",
+        "points": 5,
+        "username": "kiyanwang",
+        "comments": 2
+    },
+    {
+        "rank": 24,
+        "title": "The Cirrus Banking Network (1985) [pdf]",
+        "url": "https://www.cs.tufts.edu/~nr/cs257/archive/alfred-spector/spector85cirrus.pdf",
+        "points": 24,
+        "username": "alibarber",
+        "comments": 7
+    },
+    {
+        "rank": 25,
+        "title": "Thousands of fraudsters are selling via Shopify, analysis finds",
+        "url": "https://www.ft.com/content/0280592d-0adf-4dcb-a831-4f8a85f414bc",
+        "points": 25,
+        "username": "juokaz",
+        "comments": 2
+    },
+    {
+        "rank": 26,
+        "title": "Why can’t you buy a good webcam?",
+        "url": "https://vsevolod.net/good-webcams/",
+        "points": 222,
+        "username": "murkt",
+        "comments": 4
+    },
+    {
+        "rank": 27,
+        "title": "Google, Facebook Agreed to Team Up Against Possible Antitrust Action",
+        "url": "https://www.wsj.com/articles/google-facebook-agreed-to-team-up-against-possible-antitrust-action-draft-lawsuit-says-11608612219",
+        "points": 143,
+        "username": "Despegar",
+        "comments": 9
+    },
+    {
+        "rank": 28,
+        "title": "Dyon – A Rusty dynamically typed scripting language",
+        "url": "https://github.com/PistonDevelopers/dyon",
+        "points": 74,
+        "username": "k__",
+        "comments": 9
+    },
+    {
+        "rank": 29,
+        "title": "Write code. Not too much. Mostly functions.",
+        "url": "https://www.brandonsmith.ninja/blog/write-code-not-too-much-mostly-functions",
+        "points": 718,
+        "username": "brundolf",
+        "comments": 15
+    },
+    {
+        "rank": 30,
+        "title": "Evidence of “modified gravity” in 150 galaxies bolsters dark matter alternative",
+        "url": "https://newatlas.com/physics/modified-gravity-evidence-dark-matter/",
+        "points": 333,
+        "username": "bookofjoe",
+        "comments": 21
+    }
+]
