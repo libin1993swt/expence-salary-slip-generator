@@ -44,6 +44,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
+                                <input type="hidden" name="company_id" value="{{ $company->id }}">
                                 <span><b>{{ $company->name }}</b></span> <br>
                                 <span>{{ $company->address }}</span>
                             </div>
@@ -74,10 +75,12 @@
                                     </div>
 
                                     <div class="col-md-6">
+                                        <input type="hidden" name="user_id" value="{{ $employee->id }}">
                                         <span>: {{ $employee->name }}</span> 
                                         <span>: {{ $employee->designation }}</span> 
                                         <span>: {{ $employee->join_date->format('d-m-Y') }}</span> 
-                                        <span>: {{ $pay_period }}</span> 
+                                        <span>: {{ $pay_period }}</span>
+                                        <input type="hidden" name="pay_period" value="{{ $pay_period }}"> 
                                         <span>: {{ date('d-m-Y') }} </span> 
                                         <span>: {{ $employee->pf_account_number }} </span> 
                                         <span>: {{ $employee->uan_number }} </span> 
@@ -173,25 +176,31 @@
             let value = $(this).val().replace(/^0+/, '');
             $(this).val(value);
         });
+        $(".deductions").on('keyup',function(){
+            let value = $(this).val().replace(/^0+/, '');
+            $(this).val(value);
+        });
 
         let total_net_amount = 0;
         let total_deduction_amount = 0;
         $(".earnings").on('change',function(){
             total_net_amount = parseFloat(total_net_amount) + parseFloat($(this).val());
-            $(".amount").text('');
-            $(".amount").text(total_net_amount);
-            total_net_amount = parseFloat(total_net_amount) - (total_deduction_amount)
-            $(".total-gross-earn").text(total_net_amount); 
+            $(".total-gross-earn").text(total_net_amount);
+            netAmount(total_net_amount,total_deduction_amount);
         });
 
       
         $(".deductions").on('change',function(){
-
             total_deduction_amount = parseFloat(total_deduction_amount) + parseFloat($(this).val());
             $(".total-deduct").text(total_deduction_amount);
-            total_net_amount = parseFloat(total_net_amount) - (total_deduction_amount)
-            $(".amount").text(total_net_amount); 
+            netAmount(total_net_amount,total_deduction_amount);
         });
+
+        function netAmount(total_net_amount,total_deduction_amount) {
+            total_net_amount = parseFloat(total_net_amount) - (total_deduction_amount)
+            $(".amount").text('');
+            $(".amount").text(total_net_amount); 
+        }
     });
 </script>
 @endsection

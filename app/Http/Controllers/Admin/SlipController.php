@@ -6,11 +6,13 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Models\SlipItem;
+use App\Models\SlipRecords;
 use App\Models\Company;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 
 use App\Traits\MonthTrait;
+use PDF;
 
 class SlipController extends Controller
 {
@@ -137,7 +139,19 @@ class SlipController extends Controller
     */
     public function generatePdf(Request $request) {
         $requestData = $request->all();
-        // $slipData = array_merge($request->earnings,$request->deductions);
-        // dd(json_encode($slipData));
+        $requestData['earning'] = json_encode($request->earnings);
+        $requestData['deduction'] = json_encode($request->deductions);
+        $requestData['date'] = date('Y-m-d');
+        
+        SlipRecords::create($requestData);
+        $data['pay_period'] = $request->pay_period;
+        $data['company'] = Company::findOrFail($request->company_id);
+        $data['employee'] = Employee::findOrFail($request->user_id);
+        
+        $data['earnings'] = $request->earnings;
+        $data['deductions'] = $request->deductions;
+        // return view('admin.slip.pdf',$data);
+        $pdf = PDF::loadView('admin.slip.pdf', $data);
+        return $pdf->download('SalarySlip.pdf');
     }
 }
