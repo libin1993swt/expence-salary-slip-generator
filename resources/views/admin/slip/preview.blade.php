@@ -104,6 +104,10 @@
                                     </thead>
                                     <tbody>
                                         @foreach($earnings as $earn)
+                                            @php
+                                                $key = str_replace(' ','_',strtolower($earn->name));
+                                                if(in_array())
+                                            @endphp
                                         <tr>
                                             <td>{{ $earn->name }}</td>
                                             <td>

@@ -24,3 +24,5 @@ Route::get('data-scraping', 'DataScrapingController@index');
 Route::get('/admin/{demopage?}', 'DemoController@demo')->name('demo');
 
 Route::get('test/html','DemoController@html');
+
+Route::get('vue/articles','VueController@index');

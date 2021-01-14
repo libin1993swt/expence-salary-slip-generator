@@ -36,6 +36,7 @@ class User extends Model
         return $this->belongsTo('App\Models\Expense','user_id');
     }
 
+
     
 }
 

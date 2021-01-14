@@ -13,19 +13,7 @@
                 </a>
             </li>
 
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="{{ url('admin/users') }}">
-                    <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">Users</span>
-                </a>
-            </li>
-
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="{{ url('admin/expense') }}">
-                    <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">Expenses</span>
-                </a>
-            </li>
+            
 
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
                 <a class="nav-link" href="{{ url('admin/groups') }}">
@@ -37,15 +25,19 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Reports">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponentsReports" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-wrench"></i>
-                    <span class="nav-link-text">Reports</span>
+                    <span class="nav-link-text">Share</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseComponentsReports">
                     <li>
-                        <a href="{{ url('admin/reports/users') }}">User</a>
+                        <a href="{{ url('admin/expense') }}">Expenses</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/cards') }}">Month</a>
+                        <a href="{{ url('admin/users') }}">Users</a>
                     </li>
+                    <li>
+                        <a href="{{ url('admin/reports/users') }}">Reports</a>
+                    </li>
+                    
                 </ul>
             </li>
 

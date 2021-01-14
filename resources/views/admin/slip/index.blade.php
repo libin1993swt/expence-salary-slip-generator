@@ -23,7 +23,8 @@
                 <th>#</th>
                 <th>Name</th>
                 <th>Designation</th>
-                <th>Join Date</th>
+                <th>Pay Period</th>
+                <th>Payment Date</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -32,18 +33,30 @@
                 <th>#</th>
                 <th>Name</th>
                 <th>Designation</th>
-                <th>Join Date</th>
+                <th>Pay Period</th>
+                <th>Payment Date</th>
                 <th>Actions</th>
               </tr>
             </tfoot>
             <tbody>
-              @foreach($items as $key => $employee)
+              @foreach($records as $key => $record)
                 <tr>
                   <td>{{ ++$key }}</td>
-                  <td>{{ $employee->name }}</td>
-                  <td>{{ $employee->designation }}</td>
-                  <td>{{ $employee->join_date }}</td>
-                  <td></td>
+                  <td>{{ $record->employee->name }}</td>
+                  <td>{{ $record->employee->designation }}</td>
+                  <td>{{ $record->pay_period }}</td>
+                  <td>{{ $record->date->format('d-m-Y') }}</td>
+                  <td>
+                    <a href="{{ url('admin/slips/' . $record->id) }}" title="View Expense"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                    
+                    <a href="{{ url('admin/slips/' . $record->id . '/edit') }}" title="Edit Expense"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+
+                    <form method="POST" action="{{ url('admin/slips' . '/' . $record->id) }}" accept-charset="UTF-8" style="display:inline">
+                        {{ method_field('DELETE') }}
+                        {{ csrf_field() }}
+                        <button type="submit" class="btn btn-danger btn-sm" title="Delete Expense" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                    </form>
+                  </td>
                 </tr>
               @endforeach
             </tbody>

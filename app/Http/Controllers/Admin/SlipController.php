@@ -24,9 +24,8 @@ class SlipController extends Controller
      */
     public function index(Request $request)
     {
-        $items = SlipItem::latest()->get();
-        // dd($items);
-        return view('admin.slip.index', compact('items'));
+        $records = SlipRecords::latest()->get();
+        return view('admin.slip.index', compact('records'));
     }
 
     /**
@@ -96,9 +95,16 @@ class SlipController extends Controller
      */
     public function edit($id)
     {
-        $group = SlipItem::findOrFail($id);
+        $record = SlipRecords::findOrFail($id);
+        $company = Company::findOrFail($record->company_id);
+        $pay_period = $record->pay_period;
+        $employee = Employee::findOrFail($record->user_id);
 
-        return view('admin.groups.edit', compact('group'));
+        $earnings = SlipItem::where('type','E')->orderBy('name')->get();
+        $deductions = SlipItem::where('type','D')->orderBy('name')->get();
+        $earningData = json_decode($record->earning,true);
+        $deductionData = json_decode($record->deduction,true);
+        return view('admin.slip.edit', compact('record','company','pay_period','employee','earnings','deductions','earningData','deductionData'));
     }
 
     /**

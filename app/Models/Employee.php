@@ -28,4 +28,6 @@ class Employee extends Model
     protected $fillable = ['name', 'designation', 'join_date', 'pf_account_number', 'uan_number'];
 
     protected $dates = ['join_date'];
+
+    
 }

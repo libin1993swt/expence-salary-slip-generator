@@ -26,4 +26,13 @@ class SlipRecords extends Model
      * @var array
      */
     protected $fillable = ['user_id', 'company_id','pay_period','date','earning','deduction'];
+
+    protected $dates = ['date'];
+
+    /**
+    *
+    */
+    public function employee()  {
+        return $this->belongsTo(Employee::class,'user_id');
+    }
 }

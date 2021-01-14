@@ -21,3 +21,9 @@ Route::resource('signatures', 'Api\SignatureController')
     ->only(['index', 'store', 'show']);
 
 Route::put('signatures/{signature}/report', 'Api\ReportSignature@update');
+
+Route::get('articles','ArticleController@index')->name('api.articles');;
+Route::get('article/{id}','ArticleController@show');
+Route::post('articles','ArticleController@store');
+Route::put('articles','ArticleController@store');
+Route::delete('articles','ArticleController@destroy');
